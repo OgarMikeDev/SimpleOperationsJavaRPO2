@@ -79,12 +79,7 @@ public class Main {
     //Кирилл
 
 
-    public class Main {
-        public static void main(String[] args) {
-            String str = "Пример строки с числами 123 и символами !@#";
-            String result = printLettersAndNumbers(str);
-            System.out.println(result);
-        }
+
 
         public static String printLettersAndNumbers(String text) {
             StringBuilder builder = new StringBuilder();
@@ -96,44 +91,47 @@ public class Main {
             }
             return builder.toString();
         }
+
+    //Максим Лихачёв
+    public static String listContainsElementsOtherLists(ArrayList<Integer> listRandomNumbersFirst, ArrayList<Integer> listRandomNumbersSecond) {
+        return "";
+    }
+
+    //Влад
+
+
+    //Дима
+    public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
+
+    }
+
+    //Сёма
+    public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
+        return new ArrayList<>();
+    }
+
+    //Матвей. Дописать 3 аргументы в первую строку метода и его реализовать
+    public static void workWitchManagers() {
+    }
+
+    //Егор
+    public static void getSquareAndPerimetr() {
+
+    }
+
+    //Глеб
+    public static int getNumberTwoSybmol(int NumberTwoSybmol) {
+        return 0;
     }
 
 
-
-
-    //Максим Лихачёв
-public static String listContainsElementsOtherLists(ArrayList<Integer> listRandomNumbersFirst, ArrayList<Integer> listRandomNumbersSecond) {
-    return "";
-}
-
-   //Влад
-
-public static void printLettersAndNumbers(String text) {
-    я лох
-
-}
-
-//Дима
-public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
-
-}
-
-//Сёма
-public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
-    return new ArrayList<>();
-}
-
-//Матвей. Дописать 3 аргументы в первую строку метода и его реализовать
-public static void workWitchManagers() {
-}
-
-//Егор
-public static void getSquareAndPerimetr() {
-
-}
-
-//Глеб
-public static int getSquareAndPerimetr(int NumberTwoSybmol) {
-    return 0;
-}
+    public static void aske(String txt) {
+        for (int i = 0; i < txt.length(); i++) {
+            Character ch = (char) txt.charAt(i);
+            int c = ch.hashCode();
+            if (c >= 48 && c <= 57 || c >= 65 && c <= 90 || c >= 97 && c <= 122) {
+                System.out.print(ch);
+            }
+        }
+    }
 }
