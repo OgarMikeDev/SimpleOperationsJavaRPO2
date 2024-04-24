@@ -66,6 +66,7 @@ public class Main {
         Егор.
         Написать метод, который вычисляет площадь и периметр квадрата.
          */
+        System.out.println(getSquareAndPerimetr(5));
 
         /*
         Глебушка.
@@ -106,8 +107,12 @@ public class Main {
     }
 
     //Егор
-    public static void getSquareAndPerimetr() {
-
+    public static String getSquareAndPerimetr(int a) {
+        double perimeter = 0;
+        double square = 0;
+        perimeter = a * 4;
+        square = a * a;
+        return "Площадь: " + square + " Периметр: " + perimeter;
     }
 
     //Глеб
