@@ -77,41 +77,63 @@ public class Main {
     }
 
     //Кирилл
-    public static String lettersAndNumbers(String text) {
-        return "";
+
+
+    public class Main {
+        public static void main(String[] args) {
+            String str = "Пример строки с числами 123 и символами !@#";
+            String result = printLettersAndNumbers(str);
+            System.out.println(result);
+        }
+
+        public static String printLettersAndNumbers(String text) {
+            StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < text.length(); i++) {
+                char ch = text.charAt(i);
+                if (Character.isLetterOrDigit(ch)) {
+                    builder.append(ch);
+                }
+            }
+            return builder.toString();
+        }
     }
+
+
+
 
     //Максим Лихачёв
-    public static String listContainsElementsOtherLists(ArrayList<Integer> listRandomNumbersFirst, ArrayList<Integer> listRandomNumbersSecond) {
-        return "";
-    }
+public static String listContainsElementsOtherLists(ArrayList<Integer> listRandomNumbersFirst, ArrayList<Integer> listRandomNumbersSecond) {
+    return "";
+}
 
-    //Влад
-    public static void printLettersAndNumbers(String text) {
+   //Влад
 
-    }
+public static void printLettersAndNumbers(String text) {
+    я лох
 
-    //Дима
-    public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
+}
 
-    }
+//Дима
+public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
 
-    //Сёма
-    public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
-        return new ArrayList<>();
-    }
+}
 
-    //Матвей. Дописать 3 аргументы в первую строку метода и его реализовать
-    public static void workWitchManagers() {
-    }
+//Сёма
+public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
+    return new ArrayList<>();
+}
 
-    //Егор
-    public static void getSquareAndPerimetr() {
+//Матвей. Дописать 3 аргументы в первую строку метода и его реализовать
+public static void workWitchManagers() {
+}
 
-    }
+//Егор
+public static void getSquareAndPerimetr() {
 
-    //Глеб
-    public static int getSquareAndPerimetr(int NumberTwoSybmol) {
-        return 0;
-    }
+}
+
+//Глеб
+public static int getSquareAndPerimetr(int NumberTwoSybmol) {
+    return 0;
+}
 }
