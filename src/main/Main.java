@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        workWitchManagers(700, 900, 1100);
          /*
         Кирилл.
         Написать метод, который принимает строку и
@@ -62,6 +61,7 @@ public class Main {
         начислить ему премию 200$,
         вывести итоги в консоль.
          */
+        workWitchManagers(700, 900, 1100);
 
 
 
