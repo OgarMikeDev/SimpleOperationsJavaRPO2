@@ -111,7 +111,7 @@ public class Main {
     }
 
     //Глеб
-    public static int getSquareAndPerimetr(int NumberTwoSybmol) {
+    public static int getNumberTwoSybmol(int NumberTwoSybmol) {
         return 0;
     }
 }
