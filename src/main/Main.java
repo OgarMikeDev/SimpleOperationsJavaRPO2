@@ -1,10 +1,14 @@
 package main;
-
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-         /*
+         /* я дима я ни в чем не разбираюсь я тупой
         Кирилл.
         Написать метод, который принимает строку и
         оставляет в ней только буквы и числа,
@@ -77,14 +81,36 @@ public class Main {
     }
 
     //Кирилл
-    public static String lettersAndNumbers(String text) {
-        return "";
-    }
 
-    //Максим Лихачёв
+
+
     public static String listContainsElementsOtherLists(ArrayList<Integer> listRandomNumbersFirst, ArrayList<Integer> listRandomNumbersSecond) {
-        return "";
+        List<Integer> list1 = generateRandomList(10);
+        List<Integer> list2 = generateRandomList(10);
+        List<Integer> result = combineLists(list1, list2);
+        System.out.println("List 1: " + list1);
+        System.out.println("List 2: " + list2);
+        System.out.println("Combined List: " + result);
+
+        return null;
     }
+        public static List<Integer> generateRandomList(int size) {
+            List<Integer> list = new ArrayList<>();
+            Random random = new Random();
+            for (int i = 0; i < size; i++) {
+                list.add(random.nextInt(100)); // Генерируем случайное число от 0 до 99
+            }
+            return list;
+        }
+
+        public static List<Integer> combineLists(List<Integer> list1, List<Integer> list2) {
+            Set<Integer> set = new HashSet<>(list1); // Создаем множество, чтобы избежать повторений
+            set.addAll(list2); // Добавляем все элементы из второго списка
+            return new ArrayList<>(set); // Возвращаем новый список, содержащий элементы обоих списков без повторений
+        }
+
+
+
 
     //Влад
     public static void printLettersAndNumbers(String text) {
