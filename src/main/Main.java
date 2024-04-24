@@ -28,6 +28,7 @@ public class Main {
         который содержит один аргумент –
         строку и распечатать количество букв и цифр в ней.
          */
+        System.out.println(printLettersAndNumbers("123zxc"));
 
         /*
         Дима.
@@ -87,9 +88,22 @@ public class Main {
     }
 
     //Влад
-    public static void printLettersAndNumbers(String text) {
+    public static String printLettersAndNumbers(String text) {
+        int letterCount = 0;
+        int digitCount = 0;
 
+        for (char ch : text.toCharArray()) {
+            if (Character.isLetter(ch)) {
+                letterCount++;
+            } else if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+        }
+
+        return "Количество букв: " + letterCount + "\nКоличество цифр: " + digitCount;
     }
+
+
 
     //Дима
     public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
