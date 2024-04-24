@@ -111,7 +111,23 @@ public class Main {
     }
 
     //Глеб
-    public static int getSquareAndPerimetr(int NumberTwoSybmol) {
-        return 0;
+
+
+        public static int getDigitsAndSum(int number) {
+
+            // Проверка на двузначность числа
+            if (number < 10 || number > 99) {
+                System.out.println("Введите двузначное число.");
+                return 0;
+            }
+
+            // Получение разрядов и вывод на консоль
+            int tens = number / 10;
+            int units = number % 10;
+            System.out.println("Первый разряд: " + tens);
+            System.out.println("Второй разряд: " + units);
+
+            // Возвращение суммы разрядов
+            return tens + units;
+        }
     }
-}
