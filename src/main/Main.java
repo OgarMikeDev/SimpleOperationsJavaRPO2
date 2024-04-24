@@ -101,7 +101,7 @@ public class Main {
 
     //Сёма
     public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
-
+        //
         ArrayList<Integer> myList = new ArrayList<Integer>();
         for(int i = numberFirst;i <=numberSecond;i++){
             myList.add(i);
