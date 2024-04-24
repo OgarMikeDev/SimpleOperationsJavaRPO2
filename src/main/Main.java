@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-         /*
+        System.out.println( lettersAndNumbers(3,6));
+        /*
         Кирилл.
         Написать метод, который принимает строку и
         оставляет в ней только буквы и числа,
@@ -46,6 +47,8 @@ public class Main {
         формирует список из чисел этого диапазона (включая границы)
         и возвращает сформировавшийся список.
          */
+
+
 
         /*
         Матвей.
@@ -98,7 +101,12 @@ public class Main {
 
     //Сёма
     public static ArrayList<Integer> lettersAndNumbers(int numberFirst, int numberSecond) {
-        return new ArrayList<>();
+
+        ArrayList<Integer> myList = new ArrayList<Integer>();
+        for(int i = numberFirst;i <=numberSecond;i++){
+            myList.add(i);
+        }
+        return myList;
     }
 
     //Матвей. Дописать 3 аргументы в первую строку метода и его реализовать
