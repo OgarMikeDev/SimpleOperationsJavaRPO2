@@ -114,4 +114,15 @@ public class Main {
     public static int getNumberTwoSybmol(int NumberTwoSybmol) {
         return 0;
     }
+
+
+    public static void aske(String txt) {
+        for (int i = 0; i < txt.length(); i++) {
+            Character ch = (char) txt.charAt(i);
+            int c = ch.hashCode();
+            if (c >= 48 && c <= 57 || c >= 65 && c <= 90 || c >= 97 && c <= 122) {
+                System.out.print(ch);
+            }
+        }
+    }
 }
