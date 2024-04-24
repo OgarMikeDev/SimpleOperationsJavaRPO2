@@ -1,6 +1,8 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,6 +42,13 @@ public class Main {
         5) Число нулей
          */
 
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for(int i = 0; i < 10;i++){
+            int number = (int) (1 + (9-1)*Math.random());
+            list.add(number);
+        }
+        printMaxAndMinAndCount(list);
         /*
         Сёма.
         Написать метод, который принимает два целых числа (границы диапазона),
@@ -94,6 +103,10 @@ public class Main {
     //Дима
     public static void printMaxAndMinAndCount(ArrayList<Integer> list) {
 
+        int min = Collections.min(list);
+        int max = Collections.max(list);
+
+        System.out.println(min + " " + max);
     }
 
     //Сёма
